@@ -32,7 +32,7 @@ will resolve and add the package to the current development module, along with i
 Alternatively the same can be achieved if you use import in a package:
 
 ```go
-import "github.com/google/go-github/v53/github"
+import "github.com/tsachiherman/go-github/v53/github"
 ```
 
 and run `go get` without parameters.
@@ -46,7 +46,7 @@ go get github.com/google/go-github/v53@master
 ## Usage ##
 
 ```go
-import "github.com/google/go-github/v53/github"	// with go modules enabled (GO111MODULE=on or outside GOPATH)
+import "github.com/tsachiherman/go-github/v53/github"	// with go modules enabled (GO111MODULE=on or outside GOPATH)
 import "github.com/google/go-github/github" // with go modules disabled
 ```
 
@@ -135,7 +135,7 @@ import (
 	"net/http"
 
 	"github.com/bradleyfalzon/ghinstallation/v2"
-	"github.com/google/go-github/v53/github"
+	"github.com/tsachiherman/go-github/v53/github"
 )
 
 func main() {

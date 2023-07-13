@@ -14,7 +14,7 @@ import (
 	"log"
 	"syscall"
 
-	"github.com/google/go-github/v53/github"
+	"github.com/tsachiherman/go-github/v53/github"
 	"golang.org/x/crypto/ssh/terminal"
 )
 
