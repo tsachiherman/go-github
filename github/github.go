@@ -1520,6 +1520,11 @@ func (c *Client) roundTripWithOptionalFollowRedirect(ctx context.Context, u stri
 		u = resp.Header.Get("Location")
 		resp, err = c.roundTripWithOptionalFollowRedirect(ctx, u, false, opts...)
 	}
+	if resp.StatusCode >= 400 {
+		if err2 := CheckResponse(resp); err2 != nil {
+			return nil, err2
+		}
+	}
 	return resp, err
 }
 
